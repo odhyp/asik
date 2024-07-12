@@ -2,6 +2,7 @@ import pandas as pd
 
 input_path = "data/sample.xlsx"
 output_path = "data/sample.csv"
+output_json = "data/sample.json"
 
 
 def convert_to_csv(input_path, output_path):
@@ -16,9 +17,15 @@ def read_csv(csv_path):
         print(item)
 
 
+def store_data(input_path, output_path):
+    df = pd.read_csv(input_path)
+    df.to_json(output_path, orient="records")
+
+
 def main():
     convert_to_csv(input_path, output_path)
-    read_csv(output_path)
+    store_data(output_path, output_json)
+    # read_csv(output_path)
 
 
 if __name__ == '__main__':
