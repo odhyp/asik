@@ -5,6 +5,11 @@ output_path = "data/sample.csv"
 output_json = "data/sample.json"
 
 
+def read_excel(input_path):
+    excel_file = pd.read_excel(input_path, index_col=0, header=0)
+    print(excel_file)
+
+
 def convert_to_csv(input_path, output_path):
     excel_file = pd.read_excel(input_path)
     excel_file.to_csv(output_path, index=False, header=True)
@@ -23,8 +28,9 @@ def store_data(input_path, output_path):
 
 
 def main():
-    convert_to_csv(input_path, output_path)
-    store_data(output_path, output_json)
+    read_excel(input_path)
+    # convert_to_csv(input_path, output_path)
+    # store_data(output_path, output_json)
     # read_csv(output_path)
 
 
