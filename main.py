@@ -24,7 +24,7 @@ def read_csv(csv_path):
 
 def store_data(input_path, output_path):
     df = pd.read_csv(input_path)
-    df.to_json(output_path, orient="records")
+    df.to_json(output_path, orient="index", indent=2)
 
 
 def main():
