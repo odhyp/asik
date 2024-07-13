@@ -16,22 +16,26 @@ def convert_to_csv(input_path, output_path):
 
 
 def read_csv(csv_path):
-    df = pd.read_csv(csv_path, sep=",", index_col=0, header=0,
-                     usecols=["nip", "nama", "norek", "gapok"])
-    for item in df.itertuples():
-        print(item)
+    df = pd.read_csv(csv_path, sep=",", index_col=0, header=0)
 
+    # Check column names
+    # print("Column names in the CSV file:", df.columns.tolist())
 
-def store_data(input_path, output_path):
-    df = pd.read_csv(input_path)
-    df.to_json(output_path, orient="index", indent=2)
+    for index, row in df.iterrows():
+        value_nip = row['nip']
+        value_nama = row['nama']
+        value_gapok = row['gapok']
+
+        print(f"NIP : {value_nip}")
+        print(f"Nama : {value_nama}")
+        print(f"Gapok : {value_gapok}")
+        print("\n")
 
 
 def main():
-    read_excel(input_path)
+    # read_excel(input_path)
     # convert_to_csv(input_path, output_path)
-    # store_data(output_path, output_json)
-    # read_csv(output_path)
+    read_csv(output_path)
 
 
 if __name__ == '__main__':
