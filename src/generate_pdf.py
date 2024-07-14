@@ -110,12 +110,6 @@ class PDF(FPDF):
                   border=SHOW_BORDERS
                   )
 
-        self.line(x1=10,
-                  y1=100,
-                  x2=200,
-                  y2=100,
-                  )
-
         self.ln(20)
 
     def footer(self):
