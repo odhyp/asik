@@ -110,7 +110,12 @@ class PDF(FPDF):
                   border=SHOW_BORDERS
                   )
 
-        self.ln(20)
+        self.cell(w=0,
+                  h=8,
+                  border="T"
+                  )
+
+        self.ln(10)
 
     def footer(self):
         self.set_y(-15)
