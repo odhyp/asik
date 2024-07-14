@@ -23,7 +23,7 @@ class PDF(FPDF):
 
         self.cell(w=30,
                   h=8,
-                  new_x="LMARGIN",
+                  new_x="RIGHT",
                   border=SHOW_BORDERS
                   )
 
@@ -38,7 +38,7 @@ class PDF(FPDF):
 
         self.cell(w=30,
                   h=8,
-                  new_x="LMARGIN",
+                  new_x="RIGHT",
                   border=SHOW_BORDERS
                   )
 
@@ -53,7 +53,7 @@ class PDF(FPDF):
 
         self.cell(w=30,
                   h=8,
-                  new_x="LMARGIN",
+                  new_x="RIGHT",
                   border=SHOW_BORDERS
                   )
 
@@ -82,7 +82,7 @@ class PDF(FPDF):
 
         self.cell(w=30,
                   h=8,
-                  new_x="LMARGIN",
+                  new_x="RIGHT",
                   border=SHOW_BORDERS
                   )
 
@@ -97,7 +97,7 @@ class PDF(FPDF):
 
         self.cell(w=30,
                   h=8,
-                  new_x="LMARGIN",
+                  new_x="RIGHT",
                   border=SHOW_BORDERS
                   )
 
