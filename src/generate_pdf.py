@@ -11,8 +11,8 @@ from src.constants import (SHOW_BORDERS,
 class PDF(FPDF):
     def header(self):
         self.image(name="assets/logo.png",
-                   x=10,
-                   y=10,
+                   x=25,
+                   y=14,
                    w=30,
                    keep_aspect_ratio=True,
                    )
@@ -67,9 +67,9 @@ class PDF(FPDF):
                   )
 
         self.image(name="assets/placeholder.png",
-                   x=40,
+                   x=70,
                    y=34,
-                   w=165,
+                   w=110,
                    h=8,
                    )
 
