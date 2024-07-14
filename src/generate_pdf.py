@@ -18,6 +18,7 @@ class GeneratePDF():
                        w=30,
                        keep_aspect_ratio=True,
                        )
+
             self.set_font(family=FONT_FAMILY,
                           size=FONT_SIZE
                           )
@@ -27,6 +28,7 @@ class GeneratePDF():
                       new_x="LMARGIN",
                       border=SHOW_BORDERS
                       )
+
             self.cell(w=0,
                       h=8,
                       text="PEMERINTAH DAERAH DAERAH ISTIMEWA YOGYAKARTA",
@@ -41,6 +43,7 @@ class GeneratePDF():
                       new_x="LMARGIN",
                       border=SHOW_BORDERS
                       )
+
             self.cell(w=0,
                       h=8,
                       text="BADAN PENGELOLA KEUANGAN DAN ASET",
@@ -55,6 +58,7 @@ class GeneratePDF():
                       new_x="LMARGIN",
                       border=SHOW_BORDERS
                       )
+
             self.cell(w=0,
                       h=8,
                       text="KPPD DIY DI KABUPATEN BANTUL",
