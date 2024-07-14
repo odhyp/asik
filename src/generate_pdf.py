@@ -156,6 +156,27 @@ class PDF(FPDF):
 
         self.ln(10)
 
+    def section_main(self):
+        self.cell(w=30,
+                  h=8,
+                  text="NIP",
+                  new_x="RIGHT",
+                  border=SHOW_BORDERS)
+
+        self.cell(w=10,
+                  h=8,
+                  text=":",
+                  align="C",
+                  new_x="RIGHT",
+                  border=SHOW_BORDERS)
+
+        self.cell(w=0,
+                  h=8,
+                  text="199904192021021002",
+                  new_x="LMARGIN",
+                  new_y="NEXT",
+                  border=SHOW_BORDERS)
+
     def create_page(self, output_path):
         self.add_page()
 
@@ -163,6 +184,7 @@ class PDF(FPDF):
         self.set_author("Odhy Pradhana")
 
         self.section_title()
+        self.section_main()
 
         self.output(output_path)
 
