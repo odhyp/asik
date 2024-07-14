@@ -133,6 +133,7 @@ class PDF(FPDF):
                   h=8,
                   text=f"This page is generated using ASIK 2.0",
                   align="C",
+                  link="https://github.com/odhyp/asik",
                   border=SHOW_BORDERS
                   )
 
