@@ -137,11 +137,32 @@ class PDF(FPDF):
                   border=SHOW_BORDERS
                   )
 
+    def section_title(self):
+        self.cell(w=0,
+                  h=8,
+                  text="SLIP GAJI",
+                  align="C",
+                  new_x="LMARGIN",
+                  new_y="NEXT",
+                  border=SHOW_BORDERS)
+
+        self.cell(w=0,
+                  h=8,
+                  text="Bulan: Juli 2024",
+                  align="C",
+                  new_x="LMARGIN",
+                  new_y="NEXT",
+                  border=SHOW_BORDERS)
+
+        self.ln(10)
+
     def create_page(self, output_path):
         self.add_page()
 
         self.set_title("Slip Gaji - ASIK")
         self.set_author("Odhy Pradhana")
+
+        self.section_title()
 
         self.output(output_path)
 
