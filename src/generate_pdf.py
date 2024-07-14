@@ -114,8 +114,22 @@ class PDF(FPDF):
 
     def footer(self):
         self.set_y(-15)
-        self.set_font("helvetica", "B", size=16)
-        self.cell(0, 10, f"Page {self.page_no()}/{{nb}}", align="C")
+
+        self.set_font(family=FONT_FAMILY,
+                      size=FONT_SIZE,
+                      style="I"
+                      )
+
+        self.set_text_color(r=119,
+                            g=119,
+                            b=119)
+
+        self.cell(w=0,
+                  h=8,
+                  text=f"This page is generated using ASIK 2.0",
+                  align="C",
+                  border=SHOW_BORDERS
+                  )
 
     def create_page(self, output_path):
         self.add_page()
