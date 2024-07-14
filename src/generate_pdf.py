@@ -8,7 +8,7 @@ from src.constants import (SHOW_BORDERS,
                            )
 
 
-class GeneratePDF(FPDF):
+class PDF(FPDF):
     def header(self):
         self.image(name="assets/logo.png",
                    x=10,
@@ -123,10 +123,19 @@ class GeneratePDF(FPDF):
         self.set_font("helvetica", "B", size=16)
         self.cell(0, 10, f"Page {self.page_no()}/{{nb}}", align="C")
 
-    def create_pdf(self, output_path):
+    def create_page(self, output_path):
         self.add_page()
 
         self.set_title("Slip Gaji - ASIK")
         self.set_author("Odhy Pradhana")
 
         self.output(output_path)
+
+
+class GeneratePDF:
+    def create_pdf(self, output_path):
+        pdf = PDF(orientation='P',
+                  unit='mm',
+                  format=PAPER_SIZE)
+        pdf.set_margins(left=25.4, top=10)
+        pdf.create_page(output_path)

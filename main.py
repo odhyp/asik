@@ -17,10 +17,7 @@ def main():
     csv_handler.convert_to_csv(input_path, output_path)
     csv_handler.read_csv(output_path)
 
-    generate_pdf = GeneratePDF(orientation='P',
-                               unit='mm',
-                               format=PAPER_SIZE)
-    generate_pdf.set_margin(0)
+    generate_pdf = GeneratePDF()
     generate_pdf.create_pdf(output_pdf)
 
 
