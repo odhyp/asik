@@ -22,13 +22,13 @@ class PDF(FPDF):
                       )
 
         self.cell(w=30,
-                  h=8,
+                  h=6,
                   new_x="RIGHT",
                   border=SHOW_BORDERS
                   )
 
         self.cell(w=0,
-                  h=8,
+                  h=6,
                   text="PEMERINTAH DAERAH DAERAH ISTIMEWA YOGYAKARTA",
                   align="C",
                   new_x="LMARGIN",
@@ -36,14 +36,18 @@ class PDF(FPDF):
                   border=SHOW_BORDERS
                   )
 
+        self.set_font(family=FONT_FAMILY,
+                      size=14
+                      )
+
         self.cell(w=30,
-                  h=8,
+                  h=6,
                   new_x="RIGHT",
                   border=SHOW_BORDERS
                   )
 
         self.cell(w=0,
-                  h=8,
+                  h=6,
                   text="BADAN PENGELOLA KEUANGAN DAN ASET",
                   align="C",
                   new_x="LMARGIN",
@@ -52,13 +56,13 @@ class PDF(FPDF):
                   )
 
         self.cell(w=30,
-                  h=8,
+                  h=6,
                   new_x="RIGHT",
                   border=SHOW_BORDERS
                   )
 
         self.cell(w=0,
-                  h=8,
+                  h=6,
                   text="KPPD DIY DI KABUPATEN BANTUL",
                   align="C",
                   new_x="LMARGIN",
@@ -66,13 +70,6 @@ class PDF(FPDF):
                   border=SHOW_BORDERS
                   )
 
-        self.image(name="assets/placeholder.png",
-                   x=70,
-                   y=34,
-                   w=110,
-                   h=8,
-                   )
-
         self.cell(w=0,
                   h=8,
                   new_x="LMARGIN",
@@ -80,14 +77,25 @@ class PDF(FPDF):
                   border=SHOW_BORDERS
                   )
 
+        self.image(name="assets/placeholder.png",
+                   x=70,
+                   y=28,
+                   w=110,
+                   h=8,
+                   )
+
+        self.set_font(family=FONT_FAMILY,
+                      size=10
+                      )
+
         self.cell(w=30,
-                  h=8,
+                  h=6,
                   new_x="RIGHT",
                   border=SHOW_BORDERS
                   )
 
         self.cell(w=0,
-                  h=8,
+                  h=6,
                   text="Alamat: Jalan Urip Sumoharjo Telepone/Fax: 0274-367483",
                   align="C",
                   new_x="LMARGIN",
@@ -96,13 +104,13 @@ class PDF(FPDF):
                   )
 
         self.cell(w=30,
-                  h=8,
+                  h=6,
                   new_x="RIGHT",
                   border=SHOW_BORDERS
                   )
 
         self.cell(w=0,
-                  h=8,
+                  h=6,
                   text="BANTUL 55711",
                   align="C",
                   new_x="LMARGIN",
@@ -111,7 +119,7 @@ class PDF(FPDF):
                   )
 
         self.cell(w=0,
-                  h=8,
+                  h=6,
                   border="T"
                   )
 
