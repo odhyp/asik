@@ -26,9 +26,9 @@
     <br>
     <br>
     <br>
-    <img src="https://img.shields.io/github/forks/odhyp/asik.svg?style=for-the-badge" alt="forks"/>
+    <!-- <img src="https://img.shields.io/github/forks/odhyp/asik.svg?style=for-the-badge" alt="forks"/> -->
     <img src="https://img.shields.io/github/stars/odhyp/asik.svg?style=for-the-badge" alt="stargazers"/>
-    <img src="https://img.shields.io/github/issues/odhyp/asik.svg?style=for-the-badge" alt="issues"/>
+    <!-- <img src="https://img.shields.io/github/issues/odhyp/asik.svg?style=for-the-badge" alt="issues"/> -->
     <img src="https://img.shields.io/github/license/odhyp/asik.svg?style=for-the-badge" alt="license"/>
   </p>
 </div>
