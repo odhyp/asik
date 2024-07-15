@@ -146,16 +146,25 @@ class PDF(FPDF):
                   )
 
     def section_title(self):
+        self.set_font(family=FONT_FAMILY,
+                      size=14,
+                      style="B"
+                      )
+
         self.cell(w=0,
-                  h=8,
+                  h=6,
                   text="SLIP GAJI",
                   align="C",
                   new_x="LMARGIN",
                   new_y="NEXT",
                   border=SHOW_BORDERS)
 
+        self.set_font(family=FONT_FAMILY,
+                      size=FONT_SIZE,
+                      )
+
         self.cell(w=0,
-                  h=8,
+                  h=6,
                   text="Bulan: Juli 2024",
                   align="C",
                   new_x="LMARGIN",
