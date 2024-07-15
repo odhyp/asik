@@ -2,15 +2,6 @@
 
 
 
-<!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -31,8 +22,27 @@
     <a href="https://github.com/odhyp/asik/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
     <a href="https://github.com/odhyp/asik/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="https://img.shields.io/github/forks/odhyp/asik.svg?style=for-the-badge" alt="forks"/>
+    <img src="https://img.shields.io/github/stars/odhyp/asik.svg?style=for-the-badge" alt="stargazers"/>
+    <img src="https://img.shields.io/github/issues/odhyp/asik.svg?style=for-the-badge" alt="issues"/>
+    <img src="https://img.shields.io/github/license/odhyp/asik.svg?style=for-the-badge" alt="license"/>
   </p>
 </div>
+
+
+
+<!-- PROJECT SHIELDS -->
+<!-- 
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+![Python](https://img.shields.io/badge/python-%233776AB?style=for-the-badge&logo=python&logoColor=white)
+-->
 
 
 
@@ -40,12 +50,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
+    <li><a href="#about-the-project">About The Project</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -67,18 +72,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Short description here
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![Next][Next.js]][Next-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,21 +165,23 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Odhy Pradhana - pradhana.odhy@gmail.com
 
-Project Link: [https://github.com/odhyp/asik](https://github.com/odhyp/asik)
+[![linkedin][linkedin-shield]][linkedin-url]
+[![twitter][twitter-shield]][twitter-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+<!-- 
+## Acknowledgements
 
 * [Person 1](person-1)
-* []()
-* []()
+* [Person 2](person-1)
+* [Person 3](person-1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+ -->
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -201,20 +197,6 @@ Project Link: [https://github.com/odhyp/asik](https://github.com/odhyp/asik)
 [license-url]: https://github.com/odhyp/asik/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/odhy-pradhana
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[twitter-shield]: https://img.shields.io/badge/twitter-%23000000?style=for-the-badge&logo=x&logoColor=white
+[twitter-url]: https://x.com/valgtreiz
+[python]: https://img.shields.io/badge/python-%233776AB?style=for-the-badge&logo=python&logoColor=white
