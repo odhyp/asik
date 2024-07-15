@@ -11,9 +11,9 @@ FONT_SIZE = 12
 class PDF(FPDF):
     def header(self):
         self.image(name="assets/logo.png",
-                   x=25,
-                   y=14,
-                   w=30,
+                   x=28,
+                   y=10,
+                   w=28,
                    keep_aspect_ratio=True,
                    )
 
