@@ -1,11 +1,11 @@
 from fpdf import FPDF
 
-from src.constants import (SHOW_BORDERS,
-                           PAPER_SIZE,
-                           PAPER_MARGINS,
-                           FONT_FAMILY,
-                           FONT_SIZE
-                           )
+SHOW_BORDERS = False
+PAPER_SIZE = (215, 330)  # Page size in mm
+PAPER_MARGINS = 25.4  # Page margins in mm
+
+FONT_FAMILY = "times"
+FONT_SIZE = 12
 
 
 class PDF(FPDF):

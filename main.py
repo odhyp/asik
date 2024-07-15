@@ -2,8 +2,6 @@ from src.csv_handler import CSVHandler
 from src.excel_handler import ExcelHandler
 from src.generate_pdf import GeneratePDF
 
-from src.constants import PAPER_SIZE
-
 input_path = "data/sample.xlsx"
 output_path = "data/sample.csv"
 output_pdf = "data/sample.pdf"
