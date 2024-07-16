@@ -166,7 +166,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Odhy Pradhana - pradhana.odhy@gmail.com
 
 [![linkedin][linkedin-shield]][linkedin-url]
-[![twitter][twitter-shield]][twitter-url]
+<!-- [![twitter][twitter-shield]][twitter-url] -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
