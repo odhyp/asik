@@ -11,13 +11,4 @@ class CSVHandler:
 
     def read_csv(self, csv_path):
         df = pd.read_csv(csv_path, sep=",", index_col=0, header=0)
-
-        for index, row in df.iterrows():
-            value_nip = row['nip']
-            value_nama = row['nama']
-            value_gapok = row['gapok']
-
-            print(f"NIP : {value_nip}")
-            print(f"Nama : {value_nama}")
-            print(f"Gapok : {value_gapok}")
-            print("\n")
+        return df.to_dict(orient="records")
