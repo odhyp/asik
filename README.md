@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/odhyp/asik">
-    <img src="assets/logo.png" alt="Logo" width="100">
+    <img src="assets/logo-color.png" alt="Logo" width="100">
   </a>
 
 <h3 align="center">ASIK</h3>
