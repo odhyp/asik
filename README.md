@@ -24,8 +24,6 @@
     <a href="https://github.com/odhyp/asik/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
     <br>
     <br>
-    <br>
-    <br>
     <!-- <img src="https://img.shields.io/github/forks/odhyp/asik.svg?style=for-the-badge" alt="forks"/> -->
     <img src="https://img.shields.io/github/stars/odhyp/asik.svg?style=for-the-badge" alt="stargazers"/>
     <!-- <img src="https://img.shields.io/github/issues/odhyp/asik.svg?style=for-the-badge" alt="issues"/> -->
@@ -47,10 +45,17 @@
 
 
 <!-- TABLE OF CONTENTS -->
+<br>
+<br>
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#features">Features</a></li>
+      </ul>
+    </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -72,7 +77,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Short description here
+ASIK is a Python GUI Application that generates employee monthly salary slip.
+
+### Features:
+
+1. Automated PDF Generation
+2. CSV Reader
+3. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,8 +149,8 @@ See the [open issues](https://github.com/odhyp/asik/issues) for a full list of p
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+If you have a suggestion that would make this app better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/your-feature`)
