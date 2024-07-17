@@ -81,9 +81,9 @@ ASIK is a Python GUI Application that generates employee monthly salary slip.
 
 ### Features:
 
-1. Automated PDF Generation
-2. CSV Reader
-3. 
+1. Automated PDF Generation: Reads employee data from a CSV file and creates personalized salary slips in PDF format.
+2. GUI Powered by tkinter: Offers an interactive GUI that simplifies user interaction and enhances usability.
+3. Automatic Email Distribution: Capable of automatically sending generated PDF salary slips to employees via email.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
