@@ -5,6 +5,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+  <img src="https://img.shields.io/badge/under-construction-yellow?style=for-the-badge" alt="under-construction"/>
+  <br>
+  <br>
   <a href="https://github.com/odhyp/asik">
     <img src="assets/logo-color.png" alt="Logo" width="100">
   </a>
