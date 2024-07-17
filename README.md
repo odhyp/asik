@@ -104,19 +104,8 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/odhyp/asik.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+1. Coming
+2. Soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,10 +125,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Add GUI
+- [ ] Send to e-mail feature
+- [ ] Store user setting in JSON
 
 See the [open issues](https://github.com/odhyp/asik/issues) for a full list of proposed features (and known issues).
 
@@ -188,15 +176,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- ACKNOWLEDGMENTS -->
-<!-- 
 ## Acknowledgements
 
-* [Person 1](person-1)
-* [Person 2](person-1)
-* [Person 3](person-1)
+* [Benedek Dévényi](https://github.com/rdbende) for [Forest theme for ttk](https://github.com/rdbende/Forest-ttk-theme)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
- -->
+
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
