@@ -1,17 +1,14 @@
-"""
-Example script for testing the Forest theme
-
-Author: rdbende
-License: MIT license
-Source: https://github.com/rdbende/ttk-widget-factory
-"""
-
-
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, filedialog
 
 
 class GUIMain:
+    def upload_action(self, event=None):
+        excel_path = filedialog.askopenfilename(
+            title="Select Input Excel File",
+            filetypes=[("Excel File", "*.xlsx")])
+        return excel_path
+
     def start_app(self):
         root = tk.Tk()
         root.title("Forest")
