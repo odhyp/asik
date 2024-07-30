@@ -126,6 +126,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [ ] Add GUI
+- [ ] Rewrite using Jinja2 instead of fpdf2
 - [ ] Send to e-mail feature
 - [ ] Store user setting in JSON
 
