@@ -9,6 +9,32 @@ class GUIMain:
             filetypes=[("Excel File", "*.xlsx")])
         return excel_path
 
+    def test_app(self):
+        root = tk.Tk()
+        root.title("ASIK - Aplikasi Slip Gaji Elektronik")
+        root.option_add("*tearOff", False)
+
+        # Make the app responsive
+
+        # Apply style
+        style = ttk.Style(root)
+        root.tk.call("source", "assets/forest-light.tcl")
+        style.theme_use("forest-light")
+
+        # First Frame
+        first_frame = ttk.LabelFrame(
+            root, text="First Frame", padding=(20, 10))
+        first_frame.grid(row=0, column=0, padx=(
+            20, 10), pady=(20, 10), sticky="nsew")
+
+        # First Button
+        first_button = ttk.Button(
+            first_frame, text="First Button", style="Accent.TButton", command=self.upload_action)
+        first_button.grid(row=0, column=0, padx=5, pady=5, sticky="nsew")
+
+        # Starting Loop
+        root.mainloop()
+
     def start_app(self):
         root = tk.Tk()
         root.title("Forest")
@@ -47,8 +73,10 @@ class GUIMain:
         h = tk.BooleanVar()
 
         # Create a Frame for the Checkbuttons
-        check_frame = ttk.LabelFrame(root, text="Checkbuttons", padding=(20, 10))
-        check_frame.grid(row=0, column=0, padx=(20, 10), pady=(20, 10), sticky="nsew")
+        check_frame = ttk.LabelFrame(
+            root, text="Checkbuttons", padding=(20, 10))
+        check_frame.grid(row=0, column=0, padx=(
+            20, 10), pady=(20, 10), sticky="nsew")
 
         # Checkbuttons
         check_1 = ttk.Checkbutton(check_frame, text="Unchecked", variable=a)
@@ -58,7 +86,8 @@ class GUIMain:
         check_3 = ttk.Checkbutton(check_frame, text="Third state", variable=c)
         check_3.state(["alternate"])
         check_3.grid(row=2, column=0, padx=5, pady=10, sticky="nsew")
-        check_4 = ttk.Checkbutton(check_frame, text="Disabled", state="disabled")
+        check_4 = ttk.Checkbutton(
+            check_frame, text="Disabled", state="disabled")
         check_4.state(["disabled !alternate"])
         check_4.grid(row=3, column=0, padx=5, pady=10, sticky="nsew")
 
@@ -67,23 +96,29 @@ class GUIMain:
         separator.grid(row=1, column=0, padx=(20, 10), pady=10, sticky="ew")
 
         # Create a Frame for the Radiobuttons
-        radio_frame = ttk.LabelFrame(root, text="Radiobuttons", padding=(20, 10))
-        radio_frame.grid(row=2, column=0, padx=(20, 10), pady=10, sticky="nsew")
+        radio_frame = ttk.LabelFrame(
+            root, text="Radiobuttons", padding=(20, 10))
+        radio_frame.grid(row=2, column=0, padx=(
+            20, 10), pady=10, sticky="nsew")
 
         # Radiobuttons
-        radio_1 = ttk.Radiobutton(radio_frame, text="Deselected", variable=d, value=1)
+        radio_1 = ttk.Radiobutton(
+            radio_frame, text="Deselected", variable=d, value=1)
         radio_1.grid(row=0, column=0, padx=5, pady=10, sticky="nsew")
-        radio_2 = ttk.Radiobutton(radio_frame, text="Selected", variable=d, value=2)
+        radio_2 = ttk.Radiobutton(
+            radio_frame, text="Selected", variable=d, value=2)
         radio_2.grid(row=1, column=0, padx=5, pady=10, sticky="nsew")
         radio_3 = ttk.Radiobutton(radio_frame, text="Mixed")
         radio_3.state(["alternate"])
         radio_3.grid(row=2, column=0, padx=5, pady=10, sticky="nsew")
-        radio_4 = ttk.Radiobutton(radio_frame, text="Disabled", state="disabled")
+        radio_4 = ttk.Radiobutton(
+            radio_frame, text="Disabled", state="disabled")
         radio_4.grid(row=3, column=0, padx=5, pady=10, sticky="nsew")
 
         # Create a Frame for input widgets
         widgets_frame = ttk.Frame(root, padding=(0, 0, 0, 10))
-        widgets_frame.grid(row=0, column=1, padx=10, pady=(30, 10), sticky="nsew", rowspan=3)
+        widgets_frame.grid(row=0, column=1, padx=10, pady=(
+            30, 10), sticky="nsew", rowspan=3)
         widgets_frame.columnconfigure(index=0, weight=1)
 
         # Entry
@@ -102,7 +137,8 @@ class GUIMain:
         combobox.grid(row=2, column=0, padx=5, pady=10,  sticky="ew")
 
         # Read-only combobox
-        readonly_combo = ttk.Combobox(widgets_frame, state="readonly", values=readonly_combo_list)
+        readonly_combo = ttk.Combobox(
+            widgets_frame, state="readonly", values=readonly_combo_list)
         readonly_combo.current(0)
         readonly_combo.grid(row=3, column=0, padx=5, pady=10,  sticky="ew")
 
@@ -115,7 +151,8 @@ class GUIMain:
         menu.add_command(label="Menu item 4")
 
         # Menubutton
-        menubutton = ttk.Menubutton(widgets_frame, text="Menubutton", menu=menu, direction="below")
+        menubutton = ttk.Menubutton(
+            widgets_frame, text="Menubutton", menu=menu, direction="below")
         menubutton.grid(row=4, column=0, padx=5, pady=10, sticky="nsew")
 
         # OptionMenu
@@ -127,11 +164,13 @@ class GUIMain:
         button.grid(row=6, column=0, padx=5, pady=10, sticky="nsew")
 
         # Accentbutton
-        accentbutton = ttk.Button(widgets_frame, text="Accentbutton", style="Accent.TButton")
+        accentbutton = ttk.Button(
+            widgets_frame, text="Accentbutton", style="Accent.TButton")
         accentbutton.grid(row=7, column=0, padx=5, pady=10, sticky="nsew")
 
         # Togglebutton
-        button = ttk.Checkbutton(widgets_frame, text="Togglebutton", style="ToggleButton")
+        button = ttk.Checkbutton(
+            widgets_frame, text="Togglebutton", style="ToggleButton")
         button.grid(row=8, column=0, padx=5, pady=10, sticky="nsew")
 
         # Switch
@@ -155,7 +194,8 @@ class GUIMain:
         treeScroll.pack(side="right", fill="y")
 
         # Treeview
-        treeview = ttk.Treeview(treeFrame, selectmode="extended", yscrollcommand=treeScroll.set, columns=(1, 2), height=12)
+        treeview = ttk.Treeview(treeFrame, selectmode="extended",
+                                yscrollcommand=treeScroll.set, columns=(1, 2), height=12)
         treeview.pack(expand=True, fill="both")
         treeScroll.config(command=treeview.yview)
 
@@ -196,13 +236,14 @@ class GUIMain:
             (21, "end", 23, "Child", ("Subitem 4.2.2", "Value 4.2.2")),
             (21, "end", 24, "Child", ("Subitem 4.2.3", "Value 4.2.3")),
             (19, "end", 25, "Child", ("Subitem 4.3", "Value 4.3"))
-            ]
+        ]
 
         # Insert treeview data
         for item in treeview_data:
-            treeview.insert(parent=item[0], index=item[1], iid=item[2], text=item[3], values=item[4])
+            treeview.insert(parent=item[0], index=item[1],
+                            iid=item[2], text=item[3], values=item[4])
             if item[0] == "" or item[2] in (8, 12):
-                treeview.item(item[2], open=True) # Open parents
+                treeview.item(item[2], open=True)  # Open parents
 
         # Select and scroll
         treeview.selection_set(10)
@@ -224,12 +265,15 @@ class GUIMain:
         notebook.add(tab_1, text="Tab 1")
 
         # Scale
-        scale = ttk.Scale(tab_1, from_=100, to=0, variable=g, command=lambda event: g.set(scale.get()))
+        scale = ttk.Scale(tab_1, from_=100, to=0, variable=g,
+                          command=lambda event: g.set(scale.get()))
         scale.grid(row=0, column=0, padx=(20, 10), pady=(20, 0), sticky="ew")
 
         # Progressbar
-        progress = ttk.Progressbar(tab_1, value=0, variable=g, mode="determinate")
-        progress.grid(row=0, column=1, padx=(10, 20), pady=(20, 0), sticky="ew")
+        progress = ttk.Progressbar(
+            tab_1, value=0, variable=g, mode="determinate")
+        progress.grid(row=0, column=1, padx=(
+            10, 20), pady=(20, 0), sticky="ew")
 
         # Label
         label = ttk.Label(tab_1, text="Forest ttk theme", justify="center")
@@ -252,8 +296,10 @@ class GUIMain:
         # Center the window, and set minsize
         root.update()
         root.minsize(root.winfo_width(), root.winfo_height())
-        x_cordinate = int((root.winfo_screenwidth()/2) - (root.winfo_width()/2))
-        y_cordinate = int((root.winfo_screenheight()/2) - (root.winfo_height()/2))
+        x_cordinate = int((root.winfo_screenwidth()/2) -
+                          (root.winfo_width()/2))
+        y_cordinate = int((root.winfo_screenheight()/2) -
+                          (root.winfo_height()/2))
         root.geometry("+{}+{}".format(x_cordinate, y_cordinate))
 
         # Start the main loop
