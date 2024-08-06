@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slip Gaji</title>
+
+  <style>
+    :root {
+      --page-height : 297mm;
+      --page-width  : 210mm;
+      --page-margin-x : 2cm;
+      --page-margin-y : 0.5cm;
+    }
+
+    body {
+      height: var(--page-height);
+      width: var(--page-width);
+      margin-left: auto;
+      margin-right: auto;
+      padding-inline: var(--page-margin-x);
+      padding-top: var(--page-margin-y);
+
+/*      display: grid;*/
+/*      grid-template-rows: auto 1fr auto;*/
+
+      font-size: 22px;
+    }
+
+    @media print {
+      body {
+        height: var(--page-height);
+        width: var(--page-width);
+      }
+    }
+
+    tbody {
+      vertical-align: text-top;
+    }
+
+    td {
+      padding-right: 1rem;
+    }
+
+    header {
+      line-height: 0.5rem;
+    }
+
+    .header__content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .header__logo {
+      width: 140px;
+      height: auto;
+    }
+
+    .header__text {
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .header__main-profile {
+      text-transform: uppercase;
+    }
+
+    .header__aksara {
+      display: block;
+      height: 20px;
+      max-width: 500px;
+
+    }
+
+    .header__sub-profile {
+      font-size: 0.8em;
+    }
+
+    .title {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      text-align: center;
+      line-height: 0.75rem;
+    }
+
+    .title__title {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .title__period {}
+
+    .employee {
+      margin-bottom: 4rem;
+    }
+
+    .salary {}
+    .salary__table {
+      display: flex;
+      gap: 1rem;
+    }
+
+    /* Something here */
+    .salary__table > * {
+      border: 2px solid red;
+      flex-grow: 1;
+      padding-left: 1rem;
+      height: fit-content;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header__content">
+      <img class="header__logo" src="logo-bw.png">
+      <div class="header__text">
+        <div class="header__main-profile">
+          <p>Pemerintah Daerah Daerah Istimewa Yogyakarta</p>
+          <p>Badan Pengelola Keuangan dan Aset</p>
+          <p>KPPD DIY DI KABUPATEN BANTUL</p>
+        </div>
+        <img class="header__aksara" src="">
+        <div class="header__sub-profile">
+          <p>Alamat: Jalan Urip Sumoharjo, Bantul</p>
+          <p>Telepon/Fax: 0274-367483 Kode Pos: 55711</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </header>
+
+  <main>
+    <!-- Title -->
+    <section class="title">
+      <p class="title__title">Slip Gaji</p>
+      <p class="title__period">Bulan: Agustus 2024</p>
+    </section>
+
+    <!-- Employee data -->
+    <section class="employee">
+      <table>
+        <tr>
+          <td>Nama</td>
+          <td>:</td>
+          <td>Odhy Pradhana</td>
+        </tr>
+        <tr>
+          <td>NIP</td>
+          <td>:</td>
+          <td>199904192021021002</td>
+        </tr>
+        <tr>
+          <td>Pangkat/Gol</td>
+          <td>:</td>
+          <td>Pengatur, II/c</td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td>:</td>
+          <td>PNS</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="salary">
+      <div class="salary__table">
+        <!-- Penghasilan -->
+        <table>
+          <thead>
+            <tr>
+              <th colspan="3">Penghasilan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gaji Pokok</td>
+              <td>Rp</td>
+              <td>4.126.000</td>
+            </tr>
+            <tr>
+              <td>Tunj. Istri/Suami</td>
+              <td>Rp</td>
+              <td>412.600</td>
+            </tr>
+            <tr>
+              <td>Tunj. Anak</td>
+              <td>Rp</td>
+              <td>165.000</td>
+            </tr>
+            <tr>
+              <td>Tunj. Struktural/umum</td>
+              <td>Rp</td>
+              <td>185.000</td>
+            </tr>
+            <tr>
+              <td>Tunj. Beras</td>
+              <td>Rp</td>
+              <td>289.000</td>
+            </tr>
+            <tr>
+              <td>Tunj. Khusus/PPh</td>
+              <td>Rp</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Pembulatan</td>
+              <td>Rp</td>
+              <td>57</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Jumlah Kotor</td>
+              <td>Rp</td>
+              <td>5.179.000</td>
+            </tr>
+          </tfoot>
+        </table>
+        
+        <!-- Potongan Wajib -->
+        <table>
+          <thead>
+            <tr>
+              <th colspan="3">Potongan Wajib</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>IWP 8%</td>
+              <td>Rp</td>
+              <td>376.346</td>
+            </tr>
+            <tr>
+              <td>IWP 1%</td>
+              <td>Rp</td>
+              <td>48.600</td>
+            </tr>
+            <tr>
+              <td>PPh</td>
+              <td>Rp</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Jumlah Potongan Wajib</td>
+              <td>Rp</td>
+              <td>425.600</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <!-- Potongan Bendahara -->
+        <table>
+          <thead>
+            <tr>
+              <th colspan="3">Potongan Bendahara</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bank BPD DIY</td>
+              <td>Rp</td>
+              <td>376.346</td>
+            </tr>
+            <tr>
+              <td>Iuran Korpri</td>
+              <td>Rp</td>
+              <td>48.600</td>
+            </tr>
+            <tr>
+              <td>Darma Wanita</td>
+              <td>Rp</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Bazis</td>
+              <td>Rp</td>
+              <td>15.000</td>
+            </tr>
+            <tr>
+              <td>Koperasi Pelita</td>
+              <td>Rp</td>
+              <td>135.000</td>
+            </tr>
+            <tr>
+              <td>Beras</td>
+              <td>Rp</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Lain-lain</td>
+              <td>Rp</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Jumlah Potongan Bendahara</td>
+              <td>Rp</td>
+              <td>425.600</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>This document is generated using ASIK v1.0</p>
+    </div>
+  </footer>
+</body>
+</html>
