@@ -108,10 +108,19 @@
 
     /* Something here */
     .salary__table > * {
-      border: 2px solid red;
       flex-grow: 1;
       padding-left: 1rem;
       height: fit-content;
+    }
+
+    .salary__table th {
+      padding-bottom: 1rem;
+      text-decoration: underline;
+      text-underline-offset: 0.3em;
+    }
+
+    .salary__table tfoot {
+      font-weight: bold;
     }
 
     .signature {
@@ -152,6 +161,10 @@
 
     .final__table {
       padding-inline: 1rem;
+    }
+
+    .final__table-total {
+      font-weight: bold;
     }
 
     .final__table td:first-of-type {
@@ -348,7 +361,7 @@
 
     <section class="final">
       <table class="final__table">
-        <tr>
+        <tr class="final__table-total">
           <td>Penerimaan Bersih</td>
           <td>:</td>
           <td>Rp1.332.870</td>
