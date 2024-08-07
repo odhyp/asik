@@ -195,14 +195,14 @@
       <img class="header__logo" src="../assets/logo-bw.png">
       <div class="header__text">
         <div class="header__main-profile">
-          <p>Pemerintah Daerah Daerah Istimewa Yogyakarta</p>
-          <p>Badan Pengelola Keuangan dan Aset</p>
-          <p>KPPD DIY DI KABUPATEN BANTUL</p>
+          <p>{{header_pemda}}</p>
+          <p>{{header_opd}}</p>
+          <p>{{header_upt}}</p>
         </div>
         <img class="header__aksara" src="../assets/aksara.png">
         <div class="header__sub-profile">
-          <p>Alamat: Jalan Urip Sumoharjo, Bantul</p>
-          <p>Telepon/Fax: 0274-367483 Kode Pos: 55711</p>
+          <p>Alamat: {{header_address}}</p>
+          <p>Telepon/Fax: {{header_telp}} Kode Pos: {{header_kodepos}}</p>
         </div>
       </div>
     </div>
@@ -213,7 +213,7 @@
     <!-- Title -->
     <section class="title">
       <p class="title__title">Slip Gaji</p>
-      <p class="title__period">Bulan: Agustus 2024</p>
+      <p class="title__period">Bulan: {{title_period}}</p>
     </section>
 
     <!-- Employee data -->
@@ -222,22 +222,22 @@
         <tr>
           <td>Nama</td>
           <td>:</td>
-          <td>Odhy Pradhana</td>
+          <td>{{employee_name}}</td>
         </tr>
         <tr>
           <td>NIP</td>
           <td>:</td>
-          <td>199904192021021002</td>
+          <td>{{employee_nip}}</td>
         </tr>
         <tr>
           <td>Pangkat/Gol</td>
           <td>:</td>
-          <td>Pengatur, II/c</td>
+          <td>{{employee_gol}}</td>
         </tr>
         <tr>
           <td>Status</td>
           <td>:</td>
-          <td>PNS</td>
+          <td>{{employee_status}}</td>
         </tr>
       </table>
     </section>
@@ -255,44 +255,44 @@
             <tr>
               <td>Gaji Pokok</td>
               <td>Rp</td>
-              <td>4.126.000</td>
+              <td>{{salary_gapok}}</td>
             </tr>
             <tr>
               <td>Tunj. Istri/Suami</td>
               <td>Rp</td>
-              <td>412.600</td>
+              <td>{{salary_tunjistri}}</td>
             </tr>
             <tr>
               <td>Tunj. Anak</td>
               <td>Rp</td>
-              <td>165.000</td>
+              <td>{{salary_tunjanak}}</td>
             </tr>
             <tr>
               <td>Tunj. Struktural/umum</td>
               <td>Rp</td>
-              <td>185.000</td>
+              <td>{{salary_tunjstruk}}</td>
             </tr>
             <tr>
               <td>Tunj. Beras</td>
               <td>Rp</td>
-              <td>289.000</td>
+              <td>{{salary_tunjberas}}</td>
             </tr>
             <tr>
               <td>Tunj. Khusus/PPh</td>
               <td>Rp</td>
-              <td>-</td>
+              <td>{{salary_tunjpph}}</td>
             </tr>
             <tr>
               <td>Pembulatan</td>
               <td>Rp</td>
-              <td>57</td>
+              <td>{{salary_pembulatan}}</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
               <td>Jumlah Kotor</td>
               <td>Rp</td>
-              <td>5.179.000</td>
+              <td>{{salary_jumlahkotor}}</td>
             </tr>
           </tfoot>
         </table>
@@ -308,59 +308,59 @@
             <tr>
               <td>IWP 8%</td>
               <td>Rp</td>
-              <td>376.346</td>
+              <td>{{salary_iwp8}}</td>
             </tr>
             <tr>
               <td>IWP 1%</td>
               <td>Rp</td>
-              <td>48.600</td>
+              <td>{{salary_iwp1}}</td>
             </tr>
             <tr>
               <td>PPh</td>
               <td>Rp</td>
-              <td>-</td>
+              <td>{{salary_pph}}</td>
             </tr>
             <tr>
               <td>Bank BPD DIY</td>
               <td>Rp</td>
-              <td>376.346</td>
+              <td>{{salary_bpd}}</td>
             </tr>
             <tr>
               <td>Iuran Korpri</td>
               <td>Rp</td>
-              <td>48.600</td>
+              <td>{{salary_korpri}}</td>
             </tr>
             <tr>
               <td>Darma Wanita</td>
               <td>Rp</td>
-              <td>-</td>
+              <td>{{salary_dw}}</td>
             </tr>
             <tr>
               <td>Bazis</td>
               <td>Rp</td>
-              <td>15.000</td>
+              <td>{{salary_zakat}}</td>
             </tr>
             <tr>
               <td>Koperasi Pelita</td>
               <td>Rp</td>
-              <td>135.000</td>
+              <td>{{salary_pelita}}</td>
             </tr>
             <tr>
               <td>Beras</td>
               <td>Rp</td>
-              <td>-</td>
+              <td>{{salary_beras}}</td>
             </tr>
             <tr>
               <td>Lain-lain</td>
               <td>Rp</td>
-              <td>-</td>
+              <td>{{salary_lain}}</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
               <td>Jumlah Potongan</td>
               <td>Rp</td>
-              <td>425.600</td>
+              <td>{{salary_jumlahpot}}</td>
             </tr>
           </tfoot>
         </table>
@@ -372,26 +372,26 @@
         <tr class="final__table-total">
           <td>Penerimaan Bersih</td>
           <td>:</td>
-          <td>Rp1.332.870</td>
+          <td>Rp{{final_bersih}}</td>
         </tr>
         <tr>
           <td>Terbilang</td>
           <td>:</td>
-          <td>Satu Juta Tiga Ratus Tiga Puluh Dua Ribu Delapan Ratus Tujuh Puluh</td>
+          <td>{{final_terbilang}}</td>
         </tr>
       </table>
     </section>
 
     <section class="signature">
       <div class="signature__content">
-        <p>Bantul, 01 Agustus 2024</p>
+        <p>{{signature_place}}, {{signature_date}}</p>
         <p>Pengelola Gaji</p>
         <div class="signature__container">
           <img class="signature__image" src="../assets/signature.png">
           <img class="signature__stamp" src="../assets/stamp.png">
         </div>
-        <p>ODHY PRADHANA, A.Md.Ak.</p>
-        <p>NIP. 19990419 202102 1 002</p>
+        <p>{{signature_name}}</p>
+        <p>NIP. {{signature_nip}}</p>
       </div>
     </section>
 
