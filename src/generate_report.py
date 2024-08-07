@@ -3,6 +3,18 @@ import jinja2
 
 
 class GenerateReport:
+    def format_nan_value(value: str):
+        """
+        This function takes a value and returns it as a string.
+        If the value is NaN, it returns an empty string.
+
+        Args:
+            value (str): A string of value.
+        """
+        if isinstance(value, float) and math.isnan(value):
+            return ''
+        return str(value)
+
     def create_report(main_data: dict,
                       sub_data: dict,
                       config_path: str,
