@@ -124,6 +124,28 @@
       text-align: center;
     }
 
+    .signature__container {
+      position: relative;
+      height: 90px;
+    }
+
+    .signature__image {
+      position: absolute;
+      height: 130px;
+      width: auto;
+      left: -10%;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    .signature__stamp {
+      position: absolute;
+      height: 200px;
+      width: auto;
+      left: -40%;
+      top: -50%;
+    }
+
     .final {
       line-height: 1.5;
     }
@@ -343,7 +365,10 @@
       <div class="signature__content">
         <p>Bantul, 01 Agustus 2024</p>
         <p>Pengelola Gaji</p>
-        <img class="signature__image" src="">
+        <div class="signature__container">
+          <img class="signature__image" src="../assets/signature.png">
+          <img class="signature__stamp" src="../assets/stamp.png">
+        </div>
         <p>ODHY PRADHANA, A.Md.Ak.</p>
         <p>NIP. 19990419 202102 1 002</p>
       </div>
