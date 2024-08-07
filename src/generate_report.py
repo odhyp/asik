@@ -53,7 +53,7 @@ def create_report(output_path):
         "final_bersih": final_bersih,
         "final_terbilang": final_terbilang,
 
-        "signature_place": "Bantul",
+        "signature_place": signature_place,
         "signature_date": signature_date,
         "signature_name": signature_name,
         "signature_nip": signature_nip,
