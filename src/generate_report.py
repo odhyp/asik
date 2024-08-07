@@ -66,8 +66,8 @@ def create_report(output_path):
     ).get_template("slip.html")
 
     # 4 - Render data in jinja template
-    report_text = template.render(context)
+    slip_text = template.render(context)
 
     # 5 - Save generated text as a HTML file
     with open(output_path, mode="w") as f:
-        f.write(report_text)
+        f.write(slip_text)
