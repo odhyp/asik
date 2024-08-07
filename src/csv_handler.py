@@ -16,7 +16,7 @@ class CSVHandler:
         excel_file = pd.read_excel(input_path)
         excel_file.to_csv(output_path, index=False, header=True)
 
-    def read_csv(self, csv_path: str) -> list:
+    def get_data(self, csv_path: str) -> list:
         """
         Reads a CSV file and returns its contents as a list of dictionaries.
 
