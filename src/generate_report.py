@@ -9,6 +9,11 @@ def create_report(output_path):
 
     # 2 - Compiled data for injecting
     context = {
+        "header_logo": "../assets/logo-bw.png",
+        "header_aksara": "../assets/aksara.png",
+        "signature_image": "../assets/signature.png",
+        "signature_stamp": "../assets/stamp.png",
+
         "header_pemda": "Pemerintah Daerah Daerah Istimewa Yogyakarta",
         "header_opd": "Badan Pengelola Keuangan dan Aset",
         "header_upt": "KPPD DIY Di Kabupaten Bantul",
