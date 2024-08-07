@@ -43,7 +43,11 @@
     }
 
     header {
-      line-height: 0.5rem;
+      line-height: 0.3;
+    }
+
+    section {
+      margin-bottom: 2rem;
     }
 
     .header__content {
@@ -79,9 +83,8 @@
 
     .title {
       margin-top: 4rem;
-      margin-bottom: 4rem;
       text-align: center;
-      line-height: 0.75rem;
+      line-height: 0.75;
     }
 
     .title__title {
@@ -91,9 +94,7 @@
 
     .title__period {}
 
-    .employee {
-      margin-bottom: 4rem;
-    }
+    .employee {}
 
     .salary {}
     .salary__table {
@@ -109,7 +110,33 @@
       height: fit-content;
     }
 
+    .signature {
+      line-height: 0.5;
+      display: flex;
+      justify-content: flex-end;
+    }
 
+    .signature__content {
+      text-align: center;
+    }
+
+    .final {
+      line-height: 1.5;
+    }
+
+    .final__table {
+      padding-inline: 1rem;
+    }
+
+    .final__table td:first-of-type {
+      width: 180px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.8em;
+      color: #AAA;
+    }
 
   </style>
 </head>
@@ -117,7 +144,7 @@
 <body>
   <header>
     <div class="header__content">
-      <img class="header__logo" src="logo-bw.png">
+      <img class="header__logo" src="../assets/logo-bw.png">
       <div class="header__text">
         <div class="header__main-profile">
           <p>Pemerintah Daerah Daerah Istimewa Yogyakarta</p>
@@ -170,7 +197,7 @@
     <section class="salary">
       <div class="salary__table">
         <!-- Penghasilan -->
-        <table>
+        <table class="table__penghasilan">
           <thead>
             <tr>
               <th colspan="3">Penghasilan</th>
@@ -223,10 +250,10 @@
         </table>
         
         <!-- Potongan Wajib -->
-        <table>
+        <table class="table__potongan">
           <thead>
             <tr>
-              <th colspan="3">Potongan Wajib</th>
+              <th colspan="3">Potongan</th>
             </tr>
           </thead>
           <tbody>
@@ -245,24 +272,6 @@
               <td>Rp</td>
               <td>-</td>
             </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Jumlah Potongan Wajib</td>
-              <td>Rp</td>
-              <td>425.600</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <!-- Potongan Bendahara -->
-        <table>
-          <thead>
-            <tr>
-              <th colspan="3">Potongan Bendahara</th>
-            </tr>
-          </thead>
-          <tbody>
             <tr>
               <td>Bank BPD DIY</td>
               <td>Rp</td>
@@ -301,15 +310,42 @@
           </tbody>
           <tfoot>
             <tr>
-              <td>Jumlah Potongan Bendahara</td>
+              <td>Jumlah Potongan</td>
               <td>Rp</td>
               <td>425.600</td>
             </tr>
           </tfoot>
         </table>
       </div>
-
     </section>
+
+    <section class="final">
+      <table class="final__table">
+        <tr>
+          <td>Penerimaan Bersih</td>
+          <td>:</td>
+          <td>Rp1.332.870</td>
+        </tr>
+        <tr>
+          <td>Terbilang</td>
+          <td>:</td>
+          <td>Satu Juta Tiga Ratus Tiga Puluh Dua Ribu Delapan Ratus Tujuh Puluh</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="signature">
+      <div class="signature__content">
+        <p>Bantul, 01 Agustus 2024</p>
+        <p>Pengelola Gaji</p>
+        <img class="signature__image" src="">
+        <p>ODHY PRADHANA, A.Md.Ak.</p>
+        <p>NIP. 19990419 202102 1 002</p>
+      </div>
+    </section>
+
+
+
   </main>
 
   <footer>
