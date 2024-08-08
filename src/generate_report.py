@@ -3,6 +3,11 @@ import jinja2
 
 
 class GenerateReport:
+    def format_year(date: str):
+        date_object = dt.datetime.strptime(date, "%Y-%m-%d")
+        year_value = date_object.year
+        return year_value
+
     def format_month(date: str):
         date_object = dt.datetime.strptime(date, "%Y-%m-%d")
         month_value = date_object.month
