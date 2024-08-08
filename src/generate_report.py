@@ -3,6 +3,25 @@ import jinja2
 
 
 class GenerateReport:
+    def format_month(date: str):
+        date_object = dt.datetime.strptime(date, "%Y-%m-%d")
+        month_value = date_object.month
+        month_id = {
+            1: "Januari",
+            2: "Februari",
+            3: "Maret",
+            4: "April",
+            5: "Mei",
+            6: "Juni",
+            7: "Juli",
+            8: "Agustus",
+            9: "September",
+            10: "Oktober",
+            11: "November",
+            12: "Desember"
+        }
+        return month_id[month_value]
+
     def format_nan_value(value: str):
         """
         This function takes a value and returns it as a string.
