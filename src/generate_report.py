@@ -39,7 +39,8 @@ class GenerateReport:
             return ''
         return str(value)
 
-    def create_report(main_data: dict,
+    def create_report(self,
+                      main_data: dict,
                       sub_data: dict,
                       config_path: str,
                       output_path: str):
