@@ -125,11 +125,11 @@ class GenerateReport:
             "employee_gol": employee_gol,
 
             "salary_gapok": salary_gapok,
-            "salary_tunjistri": salary_tunjistri,
-            "salary_tunjanak": salary_tunjanak,
-            "salary_tunjstruk": salary_tunjstruk,
-            "salary_tunjberas": salary_tunjberas,
-            "salary_tunjpph": salary_tunjpph,
+            "salary_tjistri": salary_tjistri,
+            "salary_tjanak": salary_tjanak,
+            "salary_tjstruk": salary_tjstruk,
+            "salary_tjberas": salary_tjberas,
+            "salary_tjpph": salary_tjpph,
             "salary_pembulatan": salary_pembulatan,
             "salary_jumlahkotor": salary_jumlahkotor,
 
