@@ -3,12 +3,12 @@ import jinja2
 
 
 class GenerateReport:
-    def format_year(date: str):
+    def format_year(self, date: str):
         date_object = dt.datetime.strptime(date, "%Y-%m-%d")
         year_value = date_object.year
         return year_value
 
-    def format_month(date: str):
+    def format_month(self, date: str):
         date_object = dt.datetime.strptime(date, "%Y-%m-%d")
         month_value = date_object.month
         month_id = {
@@ -27,7 +27,7 @@ class GenerateReport:
         }
         return month_id[month_value]
 
-    def format_nan_value(value: str):
+    def format_nan_value(self, value: str):
         """
         This function takes a value and returns it as a string.
         If the value is NaN, it returns an empty string.
