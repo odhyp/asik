@@ -102,7 +102,16 @@ class GenerateReport:
         data_date = dt.datetime.now().strftime("%d-%m-%Y")
 
         # Title section
-        title_period = main_data["tglgaji"]
+        data_year = self.format_year(main_data["tglgaji"])
+        data_month = self.format_month(main_data["tglgaji"])
+        title_period = f"{data_month} {data_year}"
+
+        # Employee section
+        data_glrdepan = self.format_nan_value(main_data["glrdepan"])
+        data_glrbelakang = self.format_glrbelakang(main_data["glrbelakang"])
+        employee_name = f"{data_glrdepan}{main_data["nama"]}{data_glrbelakang}"
+        employee_nip = main_data["nip"]
+        employee_gol = self.format_gol(main_data["kdpangkat"])
 
         # 2 - Compiled data for injecting
         context = {
