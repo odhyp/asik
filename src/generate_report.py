@@ -82,7 +82,6 @@ class GenerateReport:
             "employee_name": employee_name,
             "employee_nip": employee_nip,
             "employee_gol": employee_gol,
-            "employee_norek": employee_norek,
 
             "salary_gapok": salary_gapok,
             "salary_tunjistri": salary_tunjistri,
