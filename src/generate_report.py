@@ -4,6 +4,12 @@ import math
 
 
 class GenerateReport:
+    def is_float(self, value:float):
+        return isinstance(value, float)
+
+    def is_nan(self, value: float):
+        return math.isnan(value)
+
     def format_year(self, date: str):
         date_object = dt.datetime.strptime(date, "%Y-%m-%d")
         year_value = date_object.year
@@ -36,7 +42,7 @@ class GenerateReport:
         Args:
             value (str): A string of value.
         """
-        if isinstance(value, float) and math.isnan(value):
+        if self.is_float(value) and self.is_nan(value):
             return ''
         return str(value)
 
