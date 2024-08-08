@@ -4,7 +4,7 @@ import math
 
 
 class GenerateReport:
-    def is_float(self, value:float):
+    def is_float(self, value: float):
         return isinstance(value, float)
 
     def is_nan(self, value: float):
