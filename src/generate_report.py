@@ -1,5 +1,6 @@
 import datetime as dt
 import jinja2
+import math
 
 
 class GenerateReport:
