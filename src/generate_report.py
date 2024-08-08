@@ -23,6 +23,9 @@ class GenerateReport:
         data_image = "../assets/logo-bw.png"
         data_date = dt.datetime.now().strftime("%d-%m-%Y")
 
+        # Title section
+        title_period = main_data["tglgaji"]
+
         # 2 - Compiled data for injecting
         context = {
             "header_logo": "../assets/logo-bw.png",
@@ -37,7 +40,7 @@ class GenerateReport:
             "header_telp": "0274-367483",
             "header_kodepos": "55711",
 
-            "title_period": "Agustus 2024",
+            "title_period": title_period,
 
             "employee_name": employee_name,
             "employee_nip": employee_nip,
