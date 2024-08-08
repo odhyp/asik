@@ -51,6 +51,47 @@ class GenerateReport:
             return ''
         return str(f", {glrbelakang}")
 
+    def format_gol(self, gol: str):
+        golongan = {
+            "1A": "I/a",
+            "1B": "I/b",
+            "1C": "I/c",
+            "1D": "I/d",
+            "2A": "II/a",
+            "2B": "II/b",
+            "2C": "II/c",
+            "2D": "II/d",
+            "3A": "III/a",
+            "3B": "III/b",
+            "3C": "III/c",
+            "3D": "III/d",
+            "4A": "IV/a",
+            "4B": "IV/b",
+            "4C": "IV/c",
+            "4D": "IV/d",
+            "4E": "IV/e",
+        }
+        pangkat = {
+            "1A": "Juru Muda",
+            "1B": "Juru Muda Tk. I",
+            "1C": "Juru",
+            "1D": "Juru Tk. I",
+            "2A": "Pengatur Muda",
+            "2B": "Pengatur Muda Tk. I",
+            "2C": "Pengatur",
+            "2D": "Pengatur Tk. I",
+            "3A": "Penata Muda",
+            "3B": "Penata Muda Tk. I",
+            "3C": "Penata",
+            "3D": "Penata Tk. I",
+            "4A": "Pembina",
+            "4B": "Pembina Tk. I",
+            "4C": "Pembina Utama Muda",
+            "4D": "Pembina Utama Madya",
+            "4E": "Pembina Utama",
+        }
+        return f"{pangkat[gol]}, {golongan[gol]}"
+
     def create_report(self,
                       main_data: dict,
                       sub_data: dict,
