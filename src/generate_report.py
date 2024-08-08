@@ -46,6 +46,11 @@ class GenerateReport:
             return ''
         return str(value)
 
+    def format_glrbelakang(self, glrbelakang: str):
+        if self.is_float(glrbelakang) and self.is_nan(glrbelakang):
+            return ''
+        return str(f", {glrbelakang}")
+
     def create_report(self,
                       main_data: dict,
                       sub_data: dict,
