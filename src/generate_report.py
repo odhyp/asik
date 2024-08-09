@@ -114,11 +114,11 @@ class GenerateReport:
                       output_path: str):
         # 1 - Creating data for report
         data_image = "../assets/logo-bw.png"
-        data_date = dt.datetime.now().strftime("%d-%m-%Y")
 
         # Title section
         data_year = self.format_year(main_data["tglgaji"])
         data_month = self.format_month(main_data["tglgaji"])
+        data_date = self.format_date(main_data["tglgaji"])
         title_period = f"{data_month} {data_year}"
 
         # Employee section
