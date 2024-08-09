@@ -51,6 +51,12 @@ class GenerateReport:
             return ''
         return str(f", {glrbelakang}")
 
+    def format_tjumum(self, tjeselon: int, tjumum: int):
+        if tjeselon != 0:
+            return tjeselon
+        else:
+            return tjumum
+
     def format_gol(self, gol: str):
         golongan = {
             "1A": "I/a",
