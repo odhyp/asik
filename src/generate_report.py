@@ -102,7 +102,7 @@ class GenerateReport:
     def create_report(self,
                       main_data: dict,
                       sub_data: dict,
-                      config_path: str,
+                      config: dict,
                       output_path: str):
         # 1 - Creating data for report
         data_image = "../assets/logo-bw.png"
