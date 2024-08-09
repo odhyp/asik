@@ -1,6 +1,7 @@
 import datetime as dt
 import jinja2
 import math
+from terbilang import Terbilang
 
 
 class GenerateReport:
@@ -129,6 +130,28 @@ class GenerateReport:
         salary_tjpph = main_data["tjpajak"]
         salary_pembulatan = main_data["tbulat"]
         salary_jumlahkotor = main_data["kotor"]
+
+        # Deductions section
+        salary_iwp8 = main_data["piwp8"]
+        salary_iwp1 = main_data["piwp1"]
+        salary_pph = main_data["ppajak"]
+        data_potongan1 = main_data["potongan"]
+
+        salary_bpd = sub_data["bankbpd"]
+        salary_korpri = sub_data["korpri"]
+        salary_dw = sub_data["dw"]
+        salary_zakat = sub_data["bazis"]
+        salary_pelita = sub_data["pelita"]
+        salary_beras = sub_data["beras"]
+        salary_lain = sub_data["lain"]
+        data_potongan2 = sub_data["jumlah"]
+
+        salary_jumlahpot = data_potongan1 + data_potongan2
+
+        # Final section
+        final_bersih = salary_jumlahkotor - salary_jumlahpot
+        data_terbilang = Terbilang().parse(str(final_bersih))
+        final_terbilang = f"{data_terbilang} rupiah"
 
         # 2 - Compiled data for injecting
         context = {
