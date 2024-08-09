@@ -129,41 +129,44 @@ class GenerateReport:
         employee_gol = self.format_gol(main_data["kdpangkat"])
 
         # Earnings section
-        salary_gapok = main_data["gapok"]
-        salary_tjistri = main_data["tjistri"]
-        salary_tjanak = main_data["tjanak"]
-        salary_tjumum = self.format_tjumum(main_data["tjeselon"],
-                                           main_data["tjumum"])
-        salary_tjberas = main_data["tjberas"]
-        salary_tjpph = main_data["tjpajak"]
-        salary_pembulatan = main_data["tbulat"]
-        salary_jumlahkotor = main_data["kotor"]
+        salary_gapok = self.format_number(main_data["gapok"])
+        salary_tjistri = self.format_number(main_data["tjistri"])
+        salary_tjanak = self.format_number(main_data["tjanak"])
+        salary_tjumum = self.format_number(
+            self.format_tjumum(main_data["tjeselon"], main_data["tjumum"]))
+        salary_tjberas = self.format_number(main_data["tjberas"])
+        salary_tjpph = self.format_number(main_data["tjpajak"])
+        salary_pembulatan = self.format_number(main_data["tbulat"])
+
+        data_jumlahkotor = main_data["kotor"]
+        salary_jumlahkotor = self.format_number(data_jumlahkotor)
 
         # Deductions section
-        salary_iwp8 = main_data["piwp8"]
-        salary_iwp1 = main_data["piwp1"]
-        salary_pph = main_data["ppajak"]
-        data_potongan1 = main_data["potongan"]
+        salary_iwp8 = self.format_number(main_data["piwp8"])
+        salary_iwp1 = self.format_number(main_data["piwp1"])
+        salary_pph = self.format_number(main_data["ppajak"])
 
-        salary_bpd = sub_data["bankbpd"]
-        salary_korpri = sub_data["korpri"]
-        salary_dw = sub_data["dw"]
-        salary_zakat = sub_data["bazis"]
-        salary_pelita = sub_data["pelita"]
-        salary_beras = sub_data["beras"]
-        salary_lain = sub_data["lain"]
-        data_potongan2 = sub_data["jumlah"]
+        salary_bpd = self.format_number(sub_data["bankbpd"])
+        salary_korpri = self.format_number(sub_data["korpri"])
+        salary_dw = self.format_number(sub_data["dw"])
+        salary_zakat = self.format_number(sub_data["bazis"])
+        salary_pelita = self.format_number(sub_data["pelita"])
+        salary_beras = self.format_number(sub_data["beras"])
+        salary_lain = self.format_number(sub_data["lain"])
 
-        salary_jumlahpot = data_potongan1 + data_potongan2
+        data_potwajib = main_data["potongan"]
+        data_potbend = sub_data["jumlah"]
+        data_jumlahpot = data_potwajib + data_potbend
+        salary_jumlahpot = self.format_number(data_jumlahpot)
 
         # Final section
-        final_bersih = salary_jumlahkotor - salary_jumlahpot
+        final_bersih = self.format_number(data_jumlahkotor - data_jumlahpot)
         data_terbilang = Terbilang().parse(str(final_bersih))
         final_terbilang = f"{data_terbilang} rupiah"
 
         # Signature section
         signature_place = config["tempat"]
-        signature_date = config["tanggal"]
+        signature_date = f"{data_date} {data_month} {data_year}"
         signature_name = config["nama"]
         signature_nip = config["nip"]
 
