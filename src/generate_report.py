@@ -119,6 +119,17 @@ class GenerateReport:
         employee_nip = main_data["nip"]
         employee_gol = self.format_gol(main_data["kdpangkat"])
 
+        # Earnings section
+        salary_gapok = main_data["gapok"]
+        salary_tjistri = main_data["tjistri"]
+        salary_tjanak = main_data["tjanak"]
+        salary_tjumum = self.format_tjumum(main_data["tjeselon"],
+                                           main_data["tjumum"])
+        salary_tjberas = main_data["tjberas"]
+        salary_tjpph = main_data["tjpajak"]
+        salary_pembulatan = main_data["tbulat"]
+        salary_jumlahkotor = main_data["kotor"]
+
         # 2 - Compiled data for injecting
         context = {
             "header_logo": "../assets/logo-bw.png",
