@@ -153,6 +153,12 @@ class GenerateReport:
         data_terbilang = Terbilang().parse(str(final_bersih))
         final_terbilang = f"{data_terbilang} rupiah"
 
+        # Signature section
+        signature_place = config["tempat"]
+        signature_date = config["tanggal"]
+        signature_name = config["nama"]
+        signature_nip = config["nip"]
+
         # 2 - Compiled data for injecting
         context = {
             "header_logo": "../assets/logo-bw.png",
