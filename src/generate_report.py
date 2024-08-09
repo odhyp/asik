@@ -11,6 +11,9 @@ class GenerateReport:
     def is_nan(self, value: float):
         return math.isnan(value)
 
+    def format_number(self, value: int):
+        return f"{value:,}".replace(',', '.')
+
     def format_year(self, date: str):
         date_object = dt.datetime.strptime(date, "%Y-%m-%d")
         year_value = date_object.year
