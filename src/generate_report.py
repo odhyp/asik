@@ -55,6 +55,11 @@ class GenerateReport:
             return ''
         return str(value)
 
+    def format_terbilang(self, value: int):
+        t = Terbilang()
+        result = t.parse(value).getresult()
+        return f"{result} rupiah".title()
+
     def format_glrbelakang(self, glrbelakang: str):
         if self.is_float(glrbelakang) and self.is_nan(glrbelakang):
             return ''
