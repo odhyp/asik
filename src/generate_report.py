@@ -136,7 +136,7 @@ class GenerateReport:
             "salary_gapok": salary_gapok,
             "salary_tjistri": salary_tjistri,
             "salary_tjanak": salary_tjanak,
-            "salary_tjstruk": salary_tjstruk,
+            "salary_tjumum": salary_tjumum,
             "salary_tjberas": salary_tjberas,
             "salary_tjpph": salary_tjpph,
             "salary_pembulatan": salary_pembulatan,
