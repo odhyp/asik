@@ -38,6 +38,11 @@ class GenerateReport:
         }
         return month_id[month_value]
 
+    def format_date(self, date: str):
+        date_object = dt.datetime.strptime(date, "%Y-%m-%d")
+        date_value = date_object.day
+        return str(date_value).zfill(2)
+
     def format_nan_value(self, value: str):
         """
         This function takes a value and returns it as a string.
