@@ -126,6 +126,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [x] Rewrite using Jinja2 instead of fpdf2
+- [ ] Add option to print the document without the signature and stamp
 - [ ] Add GUI using Tkinter
 - [ ] Send to e-mail feature
 - [ ] Store user setting in JSON
