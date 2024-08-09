@@ -165,9 +165,9 @@ class GenerateReport:
         salary_jumlahpot = self.format_number(data_jumlahpot)
 
         # Final section
-        final_bersih = self.format_number(data_jumlahkotor - data_jumlahpot)
-        data_terbilang = Terbilang().parse(str(final_bersih))
-        final_terbilang = f"{data_terbilang} rupiah"
+        data_bersih = data_jumlahkotor - data_jumlahpot
+        final_bersih = self.format_number(data_bersih)
+        final_terbilang = self.format_terbilang(data_bersih)
 
         # Signature section
         signature_place = config["tempat"]
